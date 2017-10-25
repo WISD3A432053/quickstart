@@ -12,7 +12,7 @@
 */
 
 Route::get('/', function () {
-    //
+    return view('tasks');
 });
 
 // 增加新的任務

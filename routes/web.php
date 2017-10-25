@@ -11,6 +11,9 @@
 |
 */
 
+use App\Task;
+use illuminate\Http\Request;
+
 Route::get('/', function () {
     $tasks = Task::orderBy('created_at', 'asc')->get();
     //利用model Task由DB的tasks資料表取出資料

@@ -57,8 +57,9 @@
                                 <div>{{ $task->name }}</div>
                             </td>
 
-                                <!-- 代辦：刪除按鈕 -->
                             <td>
+                                <!-- 代辦：刪除按鈕 -->
+
                                 <form action="/task/{{ $task->id }}" method="POST">
                                     {{ csrf_field() }}
                                     {{ method_field('DELETE') }}
